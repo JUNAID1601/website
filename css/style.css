@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+li ,p{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1 h2 h3 h4 h5 h6{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.5em;
+}
+.navigation link,.navigation :visited{
+    color: whitesmoke;
+}
+.navigation .nav-item :hover{
+    border-bottom: 1px solid whitesmoke;
+    font-weight: 900;
+}
+.header{
+    height: 800px;
+    background: url(unique-image.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.container{
+    max-width: 1200;
+    width: 90%;
+    margin: 0% auto;
+    padding: 3rem;
+}
+.navigation{
+    padding: 1rem;
+}
+.navigation ,.logo{
+    color: whitesmoke;
+    font-size: xx-large;
+}
+.header-content{
+    padding: 300px;
+    text-align: center;
+}
+.header-content-1{
+    padding-bottom: 8px;
+    font-size: larger;
+}
+.logo{
+    float: left;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 40px;
+}
+.navigation .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navigation .nav-item{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 40px ;
+}
+.header .link-1{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    font-size: x-large;
+    padding: 6px 16px;
+    font-weight: 900;
+    margin-top: 50px;
+    font-size: large;
+}
+.header .link-1:hover{
+    background-color: #dbdbdb;
+    font-size: large;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2rem;
+}
+.text-black{
+    color: black;
+}
+.text-white{
+    color: whitesmoke;
+}
+.text-grey{
+    color: grey;
+}
+.text-red{
+    color: red;
+}
+.bg-dark{
+    background-color: #263238;
+    padding-bottom: 60px;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+.showcase{
+    background: rgb(187, 187, 187);
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: whitesmoke;
+    box-shadow: 5x 5px 20px 0px rgb(0, 0, 0);
+}
+.row-1 ,.row-2{
+    margin-bottom: 10rem;
+    display: flex;
+}
+.row-2 .img-box, .row-1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row-1 .img-box-2, .row-2 .text-box-1{
+    float: left;
+    width: 50%;
+}
+.img-box img{
+    width: 100%;
+    display: inline-block;
+    height: 350px;
+    object-fit: cover;
+}
+.row .img-box-2 img{
+    width: 90%;
+}
+.row .text-box{
+    max-width: 50%;
+    margin-right: 10px;
+    text-align: justify;
+}
+.row .text-box-2 p{
+    padding-left: 1px;
+    text-align: left;
+}
+.row .text-box p{
+    padding: 1rem 2rem 0 2rem;
+    width: 100%;
+    height: 55%;
+}
+.row .text-box h2{
+    padding: 1rem 2rem;
+    letter-spacing: 4px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+.link-2{
+    border: 3px solid red;
+    border-radius: 30px;
+    margin-left: 3%;
+    padding: 6px 16px;
+    color: red;
+    font-weight: 700;
+}
+.link-2:hover{
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navigation::after{
+    content: 0;
+    display: block;
+    clear: both;
+}
+.feature{
+    padding: 10rem 0;
+    letter-spacing: 2px;
+}
+.box{
+    width: 30%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.box-1, .box-3{
+    background-color: #263238;
+    color: whitesmoke;
+}
+.box-2{
+    background-color: #ee4758;
+    color: whitesmoke;
+}
+.footer{
+    padding: 5rem 0 3rem 0;
+    background-color: #263238;
+    text-align: center;
+    color: whitesmoke;
+}
+.footer-para{
+    padding: 10px;
+}
+footer .footer .links{
+    padding: 0 2rem;
+}
+footer .footer .links:link{
+    color: whitesmoke;
+    font-size: medium;
+}
+
+
+/* ######################   ABOUT US ###################### */
+
+.about-nav{
+    padding: 1rem;
+    padding-bottom: 60px;
+    padding: 0 40px;
+}
+.top-text{
+    border-bottom: 6px solid #ee4758;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.about-wrapper{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.left{
+    float: left;
+    width: 50%;
+}
+.right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: 0;
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: \2731;
+    color: #ee4758;
+    padding-right: 1rem;
+    font-weight: 1rem
+}
+.counts p{
+    color: black;
+    font-weight: 900;
+    font-size: medium;
+    letter-spacing: 4px;
+}
+.count-item{
+    float: left;
+    text-align: center;
+}
+.counts::after{
+    content: ;
+    display: block;
+    clear: both;
+}
+.count-1{
+    padding: 8%;
+}
+.count-2{
+    padding: 8%;
+}
+.count-3{
+    padding: 8%;
+}
+.count-4{
+    padding: 8%;
+}
+.counts .count-item span{
+    font-size: 4rem;
+    color: #ee4758;
+    font-weight: 900;
+}
+ div .about-footer{
+    background-color: #ee4758;
+    margin-top: 370px;
+    padding: 2rem 2rem;
+    color: whitesmoke;
+    font-size: 4em;
+    font-weight: 700;
+    height: 80px;
+}
+div .about-footer .lefty{
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-weight: 700;
+}
+.righty{
+    float: right;
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 4px solid whitesmoke;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: whitesmoke;
+} */
+
+/* ######################## contact page ############################ */
+.contact-form{
+    padding: 5rem 0;
+    height: 750px;
+}
+.company-address{
+    width: 47%;
+    background-color: whitesmoke;
+    float: left;
+    padding-top: 2rem;
+}
+.heading-contact{
+    font-size: 2rem;
+    font-weight: 700;
+}
+div .company-address img{
+    width: 100%;
+}
+div .company-address h2, p{
+    padding: 0 1.5rem;
+}
+div .company-address p{
+    font-size: small;
+    padding: 1.5rem 1.5rem;
+}
+div .company-address h2{
+    letter-spacing: 2px;
+}
+
+/* ################# form ##################### */
+
+.form{
+    width: 47%;
+    background-color: whitesmoke;
+    float: right;
+    padding: 1rem 1.5rem;
+}
+div .form p{
+    font-size: small;
+    padding: 1.5rem 1.5rem;
+}
+div .form h1{
+    padding: 0.5rem 0;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    border-bottom: 4px solid red;
+}
+.labels{
+    font-size: medium;
+    width: 100%;
+    height: 40px;
+}
+span{
+    color: #ee4758;
+    font-size: 1.5rem;
+}
+.textbox{
+    height: 275px;
+    width: 100%;
+}
+.button{
+    background-color: #ee4758;
+    display: block;
+    padding: 0.5em 3em;
+    width: 30%;
+    text-align: center;
+    margin: 1.5rem 35%;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+@media(max-width: 500px){
+    html{
+        font-size: 5px;
+    }
+}
+@media(max-width: 500px){
+    .header,.nav-item,.logo{
+        text-align: center;
+        float: none;
+    }
+}
+@media(max-width: 500px;){
+    .header-content-1{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+
+
+    
+    
+
