@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Vibrating Controller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="Untitled design (21).png">
+    
+</head>
+
+<body>
+    <nav class="nav blue-bg yellow-clr">
+        <div class="logo font1"><a href="http://">LOGO</a></div>
+        <div class="nav-link font2 yellow-clr"><a href="index.html">HOME</a></div>
+        <div class="nav-link font2 yellow-clr"><a href="product.html">PRODUCTS</a></div>
+        <div class="nav-link font2 yellow-clr"><a href="contact.html">CONTACT US</a></div>
+        <div class="nav-link font2 yellow-clr"><span class="icon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" id="searchInput" class="search-input" placeholder="Type something...">
+            <span class="icon" id="closeIcon" style="display: none;"><i class="fa-solid fa-wrong"></i></span></div>
+        <div class="nav-link font2 yellow-clr"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></div>
+        <div class="nav-link font2 yellow-clr"><a href=""><i class="fa-solid fa-user"></i></a></div>
+        <div class="icon">
+            
+        </div>
+    </nav>
+    <div id="main">
+        <div id="page">
+            <div class="con1 blue-clr">
+                <h1 class="font1">HEADING</h1>
+                <p class="font2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, ex ac facilisis
+                    egestas, metus velit ultricies justo, sed semper lectus velit in dui. Sed ullamcorper, metus ac
+                    luctus malesuada, ligula felis congue odio, at sollicitudin turpis metus in velit. Donec varius, ex
+                    vel bibendum interdum, mauris nunc condimentum felis, a semper lectus neque id nunc. Sed vel nisi a
+                    nunc scelerisque eleifend. In hac habitasse platea dictumst.<br>
+                    <button id="explore" class="font1">Explore More</button>
+            </div>
+            <div class="controller-container" id="controller">
+                <img src="Untitled design (21).png" alt="Controller" class="controller" style="background: none;">
+            </div>
+            <p class="design blue-clr">---------------------------------------------------</p>
+        </div>
+        <div id="page1">
+            <p class="design1 yellow-clr">---------------------------------------------------</p>
+            <h1 class="font1 yellow-clr">NEW ARRIVALS</h1>
+            <div class="con2" id="imgcon">
+                <img src="DALL·E 2025-02-20 21.59.38 - A futuristic 3D-rendered black game controller with a sleek, high-tech design, glowing LED accents, and a metallic finish. The controller features hol.webp"
+                    alt="" srcset="" class="img1" id="img1"><br>
+
+                <img src="DALL·E 2025-02-20 21.59.51 - A futuristic 3D-rendered blue game controller with a high-tech design, glowing neon cyan LED accents, and a sleek metallic finish. The controller feat.webp"
+                    alt="" srcset="" class="img2" id="img2"><br>
+
+                <img src="DALL·E 2025-02-20 21.59.55 - A futuristic 3D-rendered red game controller with a sleek and modern high-tech design, featuring glowing neon accents and a metallic finish. The contr.webp"
+                    alt="" srcset="" class="img3" id="img3"><br>
+
+                <img src="DALL·E 2025-02-20 22.04.40 - A futuristic 3D-rendered white game controller with a cutting-edge high-tech design, featuring glowing blue LED accents and a glossy metallic finish. .webp"
+                    alt="" srcset="" class="img4" id="img4">
+                </div>
+        </div>
+        <div id="page2">
+            <div class="img-fl" id="img-fl">
+                <img src="DALL·E 2025-02-21 22.25.07 - A highly realistic futuristic gaming console with an ultra-modern, sleek design. The console features glowing LED accents, a holographic display, and .webp" alt="" srcset="">
+            </div>
+            <div class="text-fl" id="text-fl">
+                <h1 class="font1 yellow-clr">HEADING</h1><br>
+
+                <p class="yellow-clr font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex tempore architecto totam mollitia voluptate earum exercitationem, recusandae, molestias eum corrupti. Alias veritatis doloribus temporibus, natus quo aliquam doloremque! Asperiores!, ipsum 
+                dolor.</p>
+                <button class="btn font1" id="btn">BUTTON</button>
+            </div>
+        </div>
+        <div id="page3">
+            <p></p>
+        </div>
+
+    </div>
+    <script>
+        const searchIcon = document.getElementById("searchIcon");
+        const searchInput = document.getElementById("searchInput");
+        const closeIcon = document.getElementById("closeIcon");
+
+        searchIcon.addEventListener("click", () => {
+            searchInput.classList.add("show");
+            closeIcon.style.display = "block";
+        });
+
+        closeIcon.addEventListener("click", () => {
+            searchInput.classList.remove("show");
+            searchInput.value = "";
+            closeIcon.style.display = "none";
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://kit.fontawesome.com/6784f00254.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
